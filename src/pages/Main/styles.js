@@ -75,3 +75,57 @@ export const SubmitButton = styled.button.attrs(props => ({
       }
     `}
 `;
+
+export const ErrorSmall = styled.small`
+  color: red;
+  padding: 3px;
+`;
+
+export const List = styled.ul`
+  color: #555;
+  text-decoration: none;
+  list-style: none;
+  font-size: 16px;
+  max-height: 300px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #7159c1;
+  }
+
+  li {
+    padding: 10px 15px;
+    width: 98%;
+    border-bottom: 1px solid rgba(113, 89, 193, 0.1);
+    /* border-radius: 5px; */
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 3px rgba(113, 89, 193, 0.3);
+
+    a {
+      border: 1px solid #7159c1;
+      padding: 5px 15px;
+      border-radius: 5px;
+      color: #7159c1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background: #7159c1;
+      color: #fff;
+    }
+  }
+`;
